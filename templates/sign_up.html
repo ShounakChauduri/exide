@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Webapp | Login </title>
+    <link rel="stylesheet" href="{{ url_for('static', path='assets/css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', path='assets/css/font-awesome.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', path='assets/css/owl.carousel.min.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', path='assets/css/owl.theme.default.min.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', path='assets/css/custom.css')}}" />
+    <link rel="stylesheet" href="{{ url_for('static', path='assets/css/responsive.css')}}" />
+    <link rel="preconnect" href="{{ url_for('static', path='https://fonts.googleapis.com')}}">
+    <link rel="preconnect" href="{{ url_for('static', path='https://fonts.gstatic.com')}}" crossorigin>
+    <link href="{{ url_for('static', path='https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap')}}"
+        rel="stylesheet">
+</head>
+
+
+
+<body>
+<div class="header-bar">
+    <h1>Sign Up</h1>
+</div>
+<div class="card-body">
+    <form action="/user/signup" method="post">
+        
+        <label for ="User"><b> Enter User name </b></label>
+        <input type="Username" id="item_id" name="item_id" required> 
+
+        <small><p><i>*Required. Letters, digits and @/./+/-/_ only.</i></p></small>
+
+
+        <label for ="str"><b>Enter your Password</b></label>
+
+        <input type="str" id="item_id" name="item_id" required>
+        
+        <small><p><i># Password can’t be too similar to your other personal information, i.e.:Username.<br>
+                # Password must contain at least 8 characters.<br>
+                # Password can’t be a commonly used password. e.g."12345"/"abcde" etc.<br>
+                # Password can’t be entirely numeric.</i><br></p></small>
+
+
+        <label for ="str"><b>Reenter Password</b></label>
+        
+        <small><p><i># Enter the same password as before, for verification.</i></p></small>
+        <br>
+
+        <input type="str" id="item_id" name="item_id" required>
+
+        <button type="submit">Register</button>
+
+        <small><p>Have an account already? <a href=""><b>Login Now</b></a></p></small>
+    </form>
+
+    <script src="{{ url_for('static', path='assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ url_for('static', path='assets/js/jquery-3.7.1.min.js') }}"></script>
+    <script src="{{ url_for('static', path='assets/js/custom.js') }}"></script>
+    <script src="{{ url_for('static', path='assets/js/owl.carousel.min.js') }}"></script>
+</div>
+</body>
+
+</html>
